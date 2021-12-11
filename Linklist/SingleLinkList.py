@@ -20,7 +20,6 @@ class single_link_list():
 
 
     def insert(self,value, location = 0):
-       
         new_node = Node(value)
         if  self.head is None and self.tail is None:
             self.head = new_node
@@ -78,22 +77,22 @@ class single_link_list():
             self.head = prev
         
         
-single_link_list = single_link_list()
+# single_link_list = single_link_list()
 
-single_link_list.insert(12)
-single_link_list.insert(134)
-single_link_list.insert(1000,-1)
-single_link_list.insert(9999)
-single_link_list.insert(1234)
+# single_link_list.insert(12)
+# single_link_list.insert(134)
+# single_link_list.insert(1000,-1)
+# single_link_list.insert(9999)
+# single_link_list.insert(1234)
 
 
-h = [node.value for node in single_link_list]
-print(h)
-print(single_link_list.search(9999))
-single_link_list.get_all()
-print(">>>>>>> REVERSED <<<<<<<<<<")
-single_link_list.reverse()
-single_link_list.get_all()
+# h = [node.value for node in single_link_list]
+# print(h)
+# print(single_link_list.search(9999))
+# single_link_list.get_all()
+# print(">>>>>>> REVERSED <<<<<<<<<<")
+# single_link_list.reverse()
+# single_link_list.get_all()
 
 
 
