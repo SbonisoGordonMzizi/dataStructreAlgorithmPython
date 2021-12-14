@@ -34,8 +34,15 @@ class MyQueue:
         if self.tail is None:
             return None
         else:
-            self.tail = self.tail.back
-            self.tail.next = None
+            if self.tail.back is None:
+                data = self.tail.value
+                self.head = None
+                self.tail = None
+            else:
+                data = self.tail.value
+                self.tail = self.tail.back
+                self.tail.next = None
+            return data
             
     
 
@@ -63,5 +70,6 @@ class MyQueue:
                 node.back = None
                 node = next_
             self.tail = None
+
 
 
